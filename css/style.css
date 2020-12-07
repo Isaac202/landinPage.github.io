@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px 0;
+    background-color: rgb(1, 1, 29);
+}
+.logo{
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+    
+}
+
+.a-logo{
+    color: white;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+/* ===========Menu Desktop==============*/
+
+.menu-desktop{
+    display: flex;
+}
+
+.ul-desktop{
+    display: flex;
+    list-style-type: none;
+    margin-top: 6px;
+}
+
+.li-desktop{
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.a-desktop{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+nav.menu-desktop a:hover{
+    color: rgb(67, 1, 250);
+}
+
+
+/* ===========Menu Desktop==============*/
+
+/* ===========Menu Mobile==============*/
+.menu-mobile{
+    display: flex;
+    display: none;
+  }
+
+.ul-mobile{
+    list-style-type: none;
+    margin-top: 6px;
+}
+
+.li-mobile{
+    padding: 0 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.a-mobile{
+    text-decoration: none;
+    color: white;
+}
+
+.botton-mobile{
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+
+}
+nav.menu-mobile a:hover{
+    color: rgb(67, 1, 250);
+}
+
+/* ===========Menu Mobile==============*/
+
+
+
+section.banner-principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/bg-form.jpg');
+    background-size: cover;
+}
+
+.form-banner{
+    width:95%;
+    max-width:700px;
+}
+
+.h2-banner{
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-email{
+    width: 100%;
+    height: 66px;
+    background: rgb(255, 255, 255);
+    color: #333;
+    font-size: 22px;
+    padding: 10px;
+}
+.input-cadastrar{
+    width: 100%;
+    height: 66px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 2%;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+   
+}
+
+.title-name{
+    color: rgb(1, 1, 29);
+}
+
+.description-text{
+    width: 50%;
+    margin: 2%;
+}
+.description-image{
+    width: 50%;
+    margin-top: 2%;
+}
+
+.image{
+    width: 90%;
+    margin-top: 4%;
+   
+}
+
+.especialidades{
+    display: flex;
+    margin-top: 2%;
+}
+.title{
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 2%;
+}
+
+h2.title{
+    text-align: center;
+    top: 2%;
+}
+
+section.descricao-autor p{
+    font-size: 16px;
+    color: #444;
+}
+
+.box-especialidade{
+    margin: 4%;
+}
+
+.desc-p,.icons{
+    color: white;
+}
+
+.icons{
+    font-size: 55px;
+    text-align: center;
+    margin-bottom:5%;
+}
+
+
+.botton{
+    background: rgb(1, 1, 29);
+    padding: 2%;
+}
+
+
+.depoimentos-container{
+    padding: 2%;
+    width: 50%;
+    margin: 2%;
+}
+.h2-depoimentos,.h2-servicos{
+    margin: 2%;
+    margin-bottom: 8%;
+}
+
+.servicos-container{
+    padding: 2%;
+    margin: 2%;
+}
+
+.nome-autor{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 1.5%;
+  
+}
+
+.li-servicos{
+    margin: 2%;
+    list-style-position: inside;
+}
+
+
+.depoimentos{
+    display: flex;
+    flex: 1;
+}
+
+footer{
+    background: rgb(1, 1, 29);
+    padding: 0.8%;
+}
+
+
+.p-footer{
+    text-align: center;
+    margin: 2%;
+    color: white;
+}
+
+
+@media screen and ( max-width: 768px){
+    html,body{
+        height: 100%;
+    }
+
+    .menu-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+        margin-right: 4%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .ul-mobile{
+        display: block;
+        top: 55px;
+        position: absolute;
+        left: 0%;
+        text-align: center;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        display: none;
+    }
+
+
+    .li-mobile{
+        border-bottom: 1px solid rgb(0, 0, 0);
+        margin: 4%;
+    }
+
+    .a-mobile{
+        color: black;
+    }
+    
+}
+
+
+@media screen and ( max-width: 745px){
+    .center{
+        width: 100%;
+    }
+    .description,.banner-principal,.especialidades{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .description-image{
+        width: 100%;
+    }
+    .description-text{
+        width: 100%;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .depoimentos-container,.servicos-container{
+        width: 100%;
+    }
+}
